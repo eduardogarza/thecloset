@@ -1,13 +1,11 @@
 <!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
+Author: edlayouts
+
 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Electronic Store a Ecommerce Online Shopping Category Bootstrap Responsive Website Template | Single Page :: w3layouts</title>
+<title>MyCloset</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -20,19 +18,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/fasthover.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
 <!-- //Custom Theme files -->
 <!-- font-awesome icons -->
 <link href="css/font-awesome.css" rel="stylesheet">
 <!-- //font-awesome icons -->
 <!-- js -->
 <script src="js/jquery.min.js"></script>
+<link rel="stylesheet" href="css/jquery.countdown.css" /> <!-- countdown -->
 <!-- //js -->
 <!-- web fonts -->
 <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,600,700|Playfair+Display" rel="stylesheet" type='text/css'>
-<!-- //web fonts --> 
-<!-- for bootstrap working -->
-<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
-<!-- //for bootstrap working -->
+<!-- //web fonts -->
 <!-- start-smooth-scrolling -->
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
@@ -45,6 +42,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- //end-smooth-scrolling -->
 </head>
 <body>
+	<!-- for bootstrap working -->
+	<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+	<!-- //for bootstrap working -->
 	<!-- header modal -->
 	<div class="modal fade" id="myModal88" tabindex="-1" role="dialog" aria-labelledby="myModal88"
 		aria-hidden="true">
@@ -126,17 +126,22 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 		</div>
 	</div>
+	<script>
+		$('#myModal88').modal('show');
+	</script>
 	<!-- header modal -->
 	<!-- header -->
-	<div class="header" id="home1">
+	<!--<div class="header" id="home1">
 		<div class="container">
-			<div class="w3l_login">
+			<div class="edl_login">
 				<a href="#" data-toggle="modal" data-target="#myModal88"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
 			</div>
-			<div class="w3l_logo">
-				<h1><a href="index.html">Electronic Store<span>Your stores. Your place.</span></a></h1>
-			</div>
-			<div class="search">
+			<div class="edl_logo">
+			<a href="index.html">
+					<img src="images/logo.png" alt=" " class="img-responsive" />
+					<span></span></a>
+			</div>-->
+			<!-- SEARCHBOXXXXX <div class="search">
 				<input class="search_box" type="checkbox" id="search_box">
 				<label class="icon-search" for="search_box"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></label>
 				<div class="search_form">
@@ -145,14 +150,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<input type="submit" value="Send">
 					</form>
 				</div>
-			</div>
-			<div class="cart cart box_1">
+			</div> -->
+			<!-- CARTXXX <div class="cart cart box_1">
 				<form action="#" method="post" class="last">
 					<input type="hidden" name="cmd" value="_cart" />
 					<input type="hidden" name="display" value="1" />
-					<button class="w3view-cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
+					<button class="edview-cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
 				</form>
-			</div>
+			</div> -->
 		</div>
 	</div>
 	<!-- //header -->
@@ -171,10 +176,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 					<ul class="nav navbar-nav">
-						<li><a href="index.html">Home</a></li>
+						<li><a href="index.html" class="act">Home</a></li>
+						<li><a href="howitworks.html">How it works</a></li>
 						<!-- Mega Menu -->
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Outfits <b class="caret"></b></a>
 							<ul class="dropdown-menu multi-column columns-3">
 								<div class="row">
 									<div class="col-sm-3">
@@ -205,7 +211,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 										</ul>
 									</div>
 									<div class="col-sm-4">
-										<div class="w3ls_products_pos">
+										<div class="edls_products_pos">
 											<h4>30%<i>Off/-</i></h4>
 											<img src="images/1.jpg" alt=" " class="img-responsive" />
 										</div>
@@ -214,14 +220,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								</div>
 							</ul>
 						</li>
-						<li><a href="about.html">About Us</a></li>
-						<li class="w3pages"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
+
+						<li class="edpages"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><a href="icons.html">Web Icons</a></li>
 								<li><a href="codes.html">Short Codes</a></li>
 							</ul>
 						</li>
-						<li><a href="mail.html">Mail Us</a></li>
+						<li><a href="mail.html">XXXs</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -922,37 +928,36 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- footer -->
 	<div class="footer">
 		<div class="container">
-			<div class="w3_footer_grids">
-				<div class="col-md-3 w3_footer_grid">
-					<h3>Contact</h3>
-					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+			<div class="ed_footer_grids">
+				<div class="col-md-3 ed_footer_grid">
+					<h3>Contacto</h3>
+					<p>Te queremos escuchar</p>
 					<ul class="address">
-						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>1234k Avenue, 4th block, <span>New York City.</span></li>
-						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">info@example.com</a></li>
-						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+1234 567 567</li>
+						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>Garza Sada 1500, Monterrey, <span>Nuevo León</span></li>
+						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">hola@mycloset.com</a></li>
+						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+52 1 888 898 9090</li>
 					</ul>
 				</div>
-				<div class="col-md-3 w3_footer_grid">
-					<h3>Information</h3>
+
+				<div class="col-md-3 ed_footer_grid">
+					<h3>Información</h3>
 					<ul class="info">
-						<li><a href="about.html">About Us</a></li>
-						<li><a href="mail.html">Contact Us</a></li>
-						<li><a href="codes.html">Short Codes</a></li>
-						<li><a href="faq.html">FAQ's</a></li>
-						<li><a href="products.html">Special Products</a></li>
+						<li><a href="about.html">Nosotros</a></li>
+						<li><a href="mail.html">Contacto</a></li>
+						<li><a href="faq.html">Preguntas fecuentes</a></li>
+						<li><a href="products.html">Promociones</a></li>
 					</ul>
 				</div>
-				<div class="col-md-3 w3_footer_grid">
-					<h3>Category</h3>
+				<div class="col-md-3 ed_footer_grid">
+					<h3>Eventos</h3>
 					<ul class="info">
-						<li><a href="products.html">Mobiles</a></li>
-						<li><a href="products1.html">Laptops</a></li>
-						<li><a href="products.html">Purifiers</a></li>
-						<li><a href="products1.html">Wearables</a></li>
-						<li><a href="products2.html">Kitchen</a></li>
+						<li><a href="products.html">Trabajo</a></li>
+						<li><a href="products.html">Fiesta</a></li>
+						<li><a href="products.html">Gala</a></li>
+
 					</ul>
 				</div>
-				<div class="col-md-3 w3_footer_grid">
+				<div class="col-md-3 ed_footer_grid">
 					<h3>Profile</h3>
 					<ul class="info">
 						<li><a href="index.html">Home</a></li>
@@ -963,7 +968,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<ul>
 							<li><a href="#" class="facebook"> </a></li>
 							<li><a href="#" class="twitter"> </a></li>
-							<li><a href="#" class="google"> </a></li>
 							<li><a href="#" class="pinterest"> </a></li>
 						</ul>
 					</div>
@@ -978,7 +982,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 			</div>
 			<div class="container">
-				<p>&copy; 2017 Electronic Store. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+				<p>&copy; 2017 MyCloset. All rights reserved | Design by <a href="">GS Studios</a></p>
 			</div>
 		</div>
 	</div>
@@ -986,9 +990,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- cart-js -->
 	<script src="js/minicart.js"></script>
 	<script>
-        w3ls.render();
+        edls.render();
 
-        w3ls.cart.on('w3sb_checkout', function (evt) {
+        edls.cart.on('edsb_checkout', function (evt) {
         	var items, len, i;
 
         	if (this.subtotal() > 0) {
@@ -1000,5 +1004,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         });
     </script>
 	<!-- //cart-js -->
+	<script type="text/javascript" src="https://cdn.chec.io/v1/commerce.js"></script>
 </body>
 </html>
