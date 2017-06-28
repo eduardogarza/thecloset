@@ -57,7 +57,6 @@ input[type="submit"],
 .ed_hs_bottom ul li a,
 .team-bottom a {
     transition: .5s ease-in-out;
-    
 }
 
 .header {
@@ -71,6 +70,154 @@ input[type="submit"],
 .edl_logo {
     float: left;
     margin-left: 22em;
+}
+
+
+/* MY CLOSET  CSS */
+
+.rwrapper {
+    padding: 15px;
+}
+
+.img-wrapper {
+    padding-top: 15px;
+    padding-bottom: 80px;
+}
+
+.rlisting {
+    background-color: #fbfbfb;
+    overflow: hidden;
+}
+
+.rlisting img {
+    width: 100%
+}
+
+.nopad {
+    padding: 0;
+}
+
+.rfooter {
+    background: #fbfbfb;
+    border-top: 1px #fbfbfb solid;
+    width: 100%;
+    padding: 5px 20px
+}
+
+.rlisting p {
+    padding-top: 10px;
+    padding-bottom: 1px;
+    text-align: center
+}
+
+.rlisting h51 {
+    text-align: center
+}
+
+.rfooter p {
+    padding-top: 0px;
+    padding-bottom: 18px;
+}
+
+.text-wrap {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    color: #d0c1ab;
+    background: #fbfbfb;
+    z-index: 999;
+    transition: all .5s ease;
+    
+}
+
+.text-wrap h4 {
+    margin-top: 0px;
+    padding: 0 5px;
+    color: #000;
+}
+
+.text-wrap h3 {
+    margin-top: 0px;
+    padding: 0 5px;
+    color: #000;
+    font-size: 1.14em;
+}
+
+.img-center{
+   
+    display: block;
+    margin: 0 auto;
+
+}
+
+.text-wrap .desc {
+    width: 50%;
+    float: left;
+    padding: 0 5px;
+}
+
+.text-wrap p {
+    padding: 15px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: normal;
+    text-shadow: 2px 2px 3px #000;
+}
+
+.rent-now-c {
+    float: right;
+    padding: 10px;
+}
+
+
+.rent-now-c a {
+    background: #d0c1ab;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 0px;
+    float: left;
+    min-width: 101px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.rent-now-c a:hover {
+    background: #BEB09C;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 0px;
+    float: left;
+    min-width: 101px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.new-deal .item-slide:hover .box-img .text-wrap {
+    bottom: -100%;
+}
+
+.portfolio-item {
+    margin-bottom: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.producttitle {
+    font-weight: bold;
+    padding: 5px 0 5px 0;
+}
+
+.productprice {
+    border-top: 1px solid #dadada;
+    padding-top: 5px;
+}
+
+.pricetext {
+    font-weight: bold;
+    font-size: 1.4em;
 }
 
 
@@ -698,13 +845,23 @@ li.edpages .dropdown-menu>li>a:hover {
 /*-- banner --*/
 
 .banner {
-    background: url(../images/home.png) no-repeat   0px;
+    background: url(../images/home.png) no-repeat 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     -ms-background-size: cover;
     min-height: 700px;
+}
+
+.banner-anuncio {
+    background: url(../images/banneranuncio.png) no-repeat 0px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    min-height: 40px;
 }
 
 .banner.banner10 {
